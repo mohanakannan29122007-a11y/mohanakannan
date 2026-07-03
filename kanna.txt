@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+
+<main>
+    <h2>Hello!</h2>
+    <p>This is my first simple website using HTML and CSS.</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="message"></p>
+</main>
+
+<footer>
+    <p>&copy; 2026 My Website</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerHTML = "Thanks for visiting my website!";
+    }
+</script>
+
+</body>
+</html>
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background: #005fa3;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+
+
+
+// Show a welcome message
+window.onload = function () {
+    alert("Welcome to My Website!");
+};
+
+// Function for the button
+function showMessage() {
+    document.getElementById("message").innerHTML =
+        "🎉 Thanks for visiting my website!";
+}
+
+// Change background color
+function changeColor() {
+    const colors = ["#f4f4f4", "#dff9fb", "#ffeaa7", "#fab1a0", "#dfe6e9"];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;
+}
+
+// Display current date and time
+function showDateTime() {
+    const now = new Date();
+    document.getElementById("time").innerHTML =
+        "Current Time: " + now.toLocaleString();
+}
+
+// Update time every second
+setInterval(showDateTime, 1000);
+
+
+
+
+
+
+
+
